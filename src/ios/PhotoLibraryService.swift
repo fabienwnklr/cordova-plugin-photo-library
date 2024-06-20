@@ -726,7 +726,7 @@ final class PhotoLibraryService {
             data = image.pngData()
             mimeType = data != nil ? "image/png" : nil
         } else {
-            data = image.jpegData(CGFloat(quality))
+            data = image.jpegData(compressionQuality: CGFloat(quality))
             mimeType = data != nil ? "image/jpeg" : nil
         }
 
